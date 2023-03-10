@@ -2,6 +2,11 @@
 
 html, body {
     font-family: 'Roboto', sans-serif !important;
+    line-height: 24px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 20px !important;
 }
 
 a {
@@ -124,22 +129,25 @@ a {
 }
      */
 
+.card-title {
+    margin-bottom: 20px !important;
+}
+.card-text {
+    margin-bottom: 50px !important;
+}
+
 
 section{
     padding: 60px 0;
 }
 
-section .section-title{
-    text-align:center;
-    margin-bottom:50px;
-}
 
 #what-we-do{
     background:#ffffff;
 }
 
 #what-we-do .card{
-    padding: 1rem!important;
+    padding: 25px!important;
     border: none;
     margin-bottom:1rem;
     -webkit-transition: .5s all ease;
@@ -212,3 +220,14 @@ section .section-title{
     -moz-transition: .5s all ease;
     transition: .5s all ease;
 }
+
+
+/*about section start*/
+
+.about {
+    padding-top: 40px;
+    margin-bottom: 100px;
+
+}
+
+/*about section end*/
