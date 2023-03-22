@@ -110,9 +110,10 @@
       <h2>Get in touch!</h2>
       <hr>
       <address>
-        <strong>Email:</strong> <a href="mailto:#"> name@domain.com</a><br><br>
-        <strong>Phone:</strong> <a href="tel: 0125497948"> 0125497948</a> <br> <br>
-        <!-- <strong>Address:</strong> <a href="">Akasia Gables, 430 Heinrich Avenue, Karenpark, 0118</a> -->
+        <i class="fa fa-envelope pt-1" style="float:left; display:inline-block; clear:both;"  aria-hidden="true"></i> <a  style="float: left; display:inline-block; width: 90%; padding-left: 25px;" href="mailto:info@moropsprojects.coza"> info@moropsprojects.co.za</a><br><br>
+        <i class="fa fa-phone pt-1" style="float:left; display:inline-block; clear:both; padding-right: 4px;"  aria-hidden="true"></i> <a style="float: left; display:inline-block; width: 90%; padding-left: 25px;" href="tel:0125497948"> 0125497948</a> <br> <br>
+        <i class="fa fa-map pt-2" style="float:left; display:inline-block; clear:both;" aria-hidden="true"></i>
+        <a  style="float: left; display:inline-block; width: 90%; padding-left: 25px;" href="https://goo.gl/maps/qE8tEsmC9VUEL74E7">Akasia Gables <br>430 Heinrich Avenue <br>Karenpark, 0118</a>
       </address>
     </div>
       
@@ -121,21 +122,21 @@
           <div class="row">
             
             <div class="col-xs-6 col-md-6 form-group">
-              <input class="form-control" type="text" name="from_name" placeholder="full name" id="from_name">
+              <input class="form-control" type="text" name="from_name" placeholder="full name" id="from_name" required>
             </div>
 
             <div class="col-xs-6 col-md-6 form-group">
-              <input class="form-control" type="email" name="reply_to" placeholder="email" id="reply_to">
+              <input class="form-control" type="email" name="reply_to" placeholder="email" id="reply_to" required>
             </div>
           </div>
 
           <br>
 
-          <textarea class="form-control" placeholder="Message" rows="5" type="text" name="message" id="message"></textarea>
+          <textarea class="form-control" placeholder="Message" rows="5" type="text" name="message" id="message" required></textarea>
           <br />
           <div class="row">
             <div class="col-xs-12 col-md-12 form-group">
-              <button class="btn btn-primary pull-right" value="Send Email" id="button" type="submit"><span class="button__text">Submit</span></button>
+              <button class="btn btn-primary pull-right" onclick="this.classList.toggle('button--loading')" value="Send Email" id="button" type="submit"><span class="button__text">Submit</span></button>
             </div>
           </div>
       </form>

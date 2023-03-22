@@ -337,7 +337,7 @@ a:hover {
 #button {
     position: relative;
     padding: 8px 16px;
-    background: #009579;
+    background: #72A603;
     border: none;
     outline: none;
     border-radius: 2px;
@@ -345,21 +345,21 @@ a:hover {
   }
   
   #button:active {
-    background: #007a63;
+    background: #72A603;
   }
   
-  #button__text {
+  .button__text {
     font: bold 20px "Quicksand", san-serif;
     color: #ffffff;
     transition: all 0.2s;
   }
   
-  #button--loading .button__text {
+  .button--loading .button__text {
     visibility: hidden;
     opacity: 0;
   }
   
-  #button--loading::after {
+  .button--loading::after {
     content: "";
     position: absolute;
     width: 16px;
